@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="button" value="NIGHT MODE" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-">
-<input type="button" value="DAY MODE" onclick="
-    document.querySelector('body').style.backgroundColor='#c4fbff';
-    document.querySelector('body').style.color='black';
-">
+    <input type="button" value="LIGHT ON/OFF" onclick="
+        var q = document.querySelector('body');
+        if(q.style.backgroundColor === 'white'){
+            q.style.backgroundColor='black';
+            q.style.color='white';
+        }else{
+            q.style.backgroundColor='white';
+            q.style.color='black';
+        }
+    ">
     <h1>My Boardgames</h1>
     <div id="grid">
     <div id="list">
