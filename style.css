@@ -1,0 +1,27 @@
+body{
+    background-color: #c1ffaf;
+}
+a{
+    color: black;
+}
+h1{
+    font-size: 400%;
+    text-align: center;
+    border-bottom: 10px solid black;
+    padding-bottom: 30px;
+}
+li{
+    text-align: center;
+    font-size: 100%;
+    margin: 10px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#list{
+    border-right: 5px solid black;
+}
+#bg{
+    text-align: center;
+}
