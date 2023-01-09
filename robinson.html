@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
+        var body = {
+            setColor:function(color){
+                document.querySelector('body').style.color = color;
+            },
+            setBgColor:function(color){
+                document.querySelector('body').style.backgroundColor = color;
+            }
+        }
         function nightDayMode(){
-        var q = document.querySelector('body');
         var links = document.querySelectorAll('a');
-        var i = 0;
-        if(q.style.backgroundColor === 'white'){
-            q.style.backgroundColor='black';
-            q.style.color='white';
+        var i = 0; 
+        if(document.querySelector('body').style.backgroundColor === 'white'){
+            body.setBgColor('black');
+            body.setColor('white');
             document.querySelector('h1').style.borderColor='white';
             document.querySelector('#list').style.borderColor='white';
             while(i<links.length){
@@ -20,8 +27,8 @@
                 i++;
             }
         }else{
-            q.style.backgroundColor='white';
-            q.style.color='black';
+            body.setBgColor('white');
+            body.setColor('black');
             document.querySelector('h1').style.borderColor='black';
             document.querySelector('#list').style.borderColor='black';
             while(i<links.length){
