@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Robinson Cruesoe</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <input type="button" value="LIGHT ON/OFF" onclick="
+
+    <script>
+        function nightDayMode(){
         var q = document.querySelector('body');
         var links = document.querySelectorAll('a');
         var i = 0;
@@ -29,6 +29,12 @@
                 i++;
             }
         }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="LIGHT ON/OFF" onclick="
+        nightDayMode();
     ">
     <h1>My Boardgames</h1>
     <div id="grid">
