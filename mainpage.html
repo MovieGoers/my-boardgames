@@ -8,12 +8,26 @@
 <body>
     <input type="button" value="LIGHT ON/OFF" onclick="
         var q = document.querySelector('body');
+        var links = document.querySelectorAll('a');
+        var i = 0;
         if(q.style.backgroundColor === 'white'){
             q.style.backgroundColor='black';
             q.style.color='white';
+            document.querySelector('h1').style.borderColor='white';
+            document.querySelector('#list').style.borderColor='white';
+            while(i<links.length){
+                links[i].style.color = 'white';
+                i++;
+            }
         }else{
             q.style.backgroundColor='white';
             q.style.color='black';
+            document.querySelector('h1').style.borderColor='black';
+            document.querySelector('#list').style.borderColor='black';
+            while(i<links.length){
+                links[i].style.color = 'black';
+                i++;
+            }
         }
     ">
     <h1>My Boardgames</h1>
